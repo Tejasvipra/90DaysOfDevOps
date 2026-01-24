@@ -5,8 +5,8 @@ Why you are starting learning DevOps & Cloud?
 - To help developers to get platform on which they can work happily no more complex works smooth operations.
 
 Where do you want to reach?
-- In the devops journey i want to reach where i can manage and configure security, deployments, develop infra, help collaborators for automation things by myself own
-- i want to do advanced coding in python
+- In the devops journey i want to reach where i can manage and configure security, deployments, develop infra, help collaborators for automation things by myself own.
+- I want to do advanced coding in python/shell.
 
 How you will stay consistent every single day?
 - I will prcatice daily if i didn't get time little bit i will practice but i will hands on all technologies.
