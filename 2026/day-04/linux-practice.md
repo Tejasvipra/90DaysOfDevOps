@@ -57,7 +57,7 @@ ubuntu:~$ systemctl status nginx
 
 Feb 02 13:53:24 ubuntu systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
 Feb 02 13:53:25 ubuntu systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
-ubuntu:~$ systemctl list-units
+ubuntu:~  systemctl list-units
   UNIT                                                                                     LOAD   ACTIVE SUB       DESCRIPTION                  >
   proc-sys-fs-binfmt_misc.automount                                                        loaded active running   Arbitrary Executable File For>
   sys-devices-pci0000:00-0000:00:02.0-0000:01:00.0-virtio0-net-enp1s0.device               loaded active plugged   Virtio 1.0 network device
@@ -72,18 +72,18 @@ ubuntu:~$ systemctl list-units
   sys-devices-platform-serial8250-serial8250:0-serial8250:0.11-tty-ttyS11.device           loaded active plugged   /sys/devices/platform/serial8>
 ubuntu:~$ systemctl list-units --all | grep nginx
   nginx.service                                                                            loaded    active   running   A high performance web server and a reverse proxy server
-ubuntu:~$ journalctl -u nginx
+ubuntu:~ journalctl -u nginx
 Feb 02 13:53:24 ubuntu systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
 Feb 02 13:53:25 ubuntu systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
 
-ubuntu:~$ tail -n 50 /var/log/nginx/access.log 
-ubuntu:~$ tail -n 50 /var/log/nginx/error.log  
+ubuntu:~  tail -n 50 /var/log/nginx/access.log = last 50 lines of logs shows 
+ubuntu:~ tail -n 50 /var/log/nginx/error.log  
 2026/02/02 13:53:25 [notice] 2436#2436: using inherited sockets from "5;6;"
-ubuntu:~$ journalctl -u nginx -f
+ubuntu:~  journalctl -u nginx -f
 Feb 02 13:53:24 ubuntu systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
 Feb 02 13:53:25 ubuntu systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
 
-ubuntu:~$ journalctl            
+ubuntu:~ journalctl  ---journalctl shows logs of systemd and all services on your system.     
 Feb 10 22:04:48 ubuntu kernel: Linux version 6.8.0-51-generic (buildd@lcy02-amd64-091) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubunt>
 Feb 10 22:04:48 ubuntu kernel: Command line: BOOT_IMAGE=/vmlinuz-6.8.0-51-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
 Feb 10 22:04:48 ubuntu kernel: KERNEL supported cpus:
