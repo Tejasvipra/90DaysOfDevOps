@@ -50,13 +50,15 @@ ubuntu:~$ sudo lsof -i :80
         ubuntu:~$ cd /etc/nginx/sites-available/       
 ubuntu:/etc/nginx/sites-available$ ls
 default
+
 2.Fix Option 2: Change port of one service
 
-            ubuntu:/etc/nginx/sites-available$ ls
-            default
-            ubuntu:/etc/nginx/sites-available$ vim default 
-            ubuntu:/etc/nginx/sites-available$ sudo nginx -t
-            nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+ ubuntu:/etc/nginx/sites-available$ ls
+  default
+  ubuntu:/etc/nginx/sites-available$ vim default 
+          ubuntu:/etc/nginx/sites-available$ sudo nginx -t
+          
+           nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
             nginx: configuration file /etc/nginx/nginx.conf test is successful
             ubuntu:/etc/nginx/sites-available$ systemctl restart nginx
             ubuntu:/etc/nginx/sites-available$ systemctl start apache2
