@@ -37,10 +37,10 @@ MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   1422.8 avail Mem
      30 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd 
 
 
-ubuntu:~$ pgrep nginx
+ubuntu:~ pgrep nginx
 2436
 2439
-ubuntu:~$ systemctl status nginx
+ubuntu:~ systemctl status nginx
 ● nginx.service - A high performance web server and a reverse proxy server
      Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
      Active: active (running) since Mon 2026-02-02 13:53:25 UTC; 35s ago
